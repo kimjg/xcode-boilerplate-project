@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFBD213C23F92A2B0000D78A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD213B23F92A2B0000D78A /* AppDelegate.swift */; };
+		DFBD214023F92A2B0000D78A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD213F23F92A2B0000D78A /* MainViewController.swift */; };
+		DFBD214523F92A2E0000D78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD214423F92A2E0000D78A /* Assets.xcassets */; };
+		DFBD214823F92A2E0000D78A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBD214623F92A2E0000D78A /* LaunchScreen.storyboard */; };
+		DFBD216423F92ADE0000D78A /* BoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD216323F92ADE0000D78A /* BoilerplateTests.swift */; };
+		DFBD217523F9313D0000D78A /* Pluginfile in Resources */ = {isa = PBXBuildFile; fileRef = DFBD217423F9313D0000D78A /* Pluginfile */; };
+		DFBD217823F9328F0000D78A /* setup.sh in Resources */ = {isa = PBXBuildFile; fileRef = DFBD217723F9328F0000D78A /* setup.sh */; };
+		DFBD218923F935490000D78A /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD217C23F935480000D78A /* GoogleUtilities.framework */; };
+		DFBD218A23F935490000D78A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD217D23F935480000D78A /* FirebaseCore.framework */; };
+		DFBD218B23F935490000D78A /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD217E23F935480000D78A /* GoogleAppMeasurement.framework */; };
+		DFBD218C23F935490000D78A /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD217F23F935480000D78A /* Protobuf.framework */; };
+		DFBD218D23F935490000D78A /* FirebaseInstallations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218023F935480000D78A /* FirebaseInstallations.framework */; };
+		DFBD218E23F935490000D78A /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218123F935480000D78A /* FirebaseCoreDiagnostics.framework */; };
+		DFBD218F23F935490000D78A /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218223F935480000D78A /* nanopb.framework */; };
+		DFBD219023F935490000D78A /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218323F935480000D78A /* PromisesObjC.framework */; };
+		DFBD219123F935490000D78A /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218423F935490000D78A /* FirebaseAnalytics.framework */; };
+		DFBD219223F935490000D78A /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218523F935490000D78A /* FirebaseInstanceID.framework */; };
+		DFBD219323F935490000D78A /* GoogleDataTransportCCTSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218623F935490000D78A /* GoogleDataTransportCCTSupport.framework */; };
+		DFBD219423F935490000D78A /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218723F935490000D78A /* FIRAnalyticsConnector.framework */; };
+		DFBD219523F935490000D78A /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD218823F935490000D78A /* GoogleDataTransport.framework */; };
+		DFBD219723F9355F0000D78A /* Toaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD219623F9355F0000D78A /* Toaster.framework */; };
+		DFBD219F23F9568F0000D78A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD219823F9568F0000D78A /* RxBlocking.framework */; };
+		DFBD21A023F9568F0000D78A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD219923F9568F0000D78A /* Alamofire.framework */; };
+		DFBD21A123F9568F0000D78A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD219A23F9568F0000D78A /* RxCocoa.framework */; };
+		DFBD21A223F9568F0000D78A /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD219B23F9568F0000D78A /* Kingfisher.framework */; };
+		DFBD21A323F9568F0000D78A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD219C23F9568F0000D78A /* SnapKit.framework */; };
+		DFBD21A423F9568F0000D78A /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD219D23F9568F0000D78A /* RxRelay.framework */; };
+		DFBD21A523F9568F0000D78A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD219E23F9568F0000D78A /* RxSwift.framework */; };
+		DFBD21BB23F96FBF0000D78A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD21B223F96FBF0000D78A /* Domain.framework */; };
+		DFBD21C223F96FBF0000D78A /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD21C123F96FBF0000D78A /* DomainTests.swift */; };
+		DFBD21C423F96FBF0000D78A /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBD21B423F96FBF0000D78A /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFBD21C723F96FBF0000D78A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD21B223F96FBF0000D78A /* Domain.framework */; };
+		DFBD21C923F96FBF0000D78A /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD21B223F96FBF0000D78A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFBD21D523F974240000D78A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFBD21D723F974240000D78A /* Localizable.strings */; };
+		DFBD21DA23F976980000D78A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD21D923F976980000D78A /* Strings.swift */; };
+		DFBD21E223F97C4A0000D78A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD21E123F97C4A0000D78A /* Colors.xcassets */; };
+		DFBD21E623F97E9B0000D78A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD21E523F97E9B0000D78A /* Colors.swift */; };
+		DFBD21EA23F9869E0000D78A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD21E923F9869E0000D78A /* Images.xcassets */; };
+		DFBD21EC23F9892B0000D78A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD21EB23F9892B0000D78A /* MainViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFBD216623F92ADE0000D78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBD213023F92A2B0000D78A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBD213723F92A2B0000D78A;
+			remoteInfo = Bolierplate;
+		};
+		DFBD21BC23F96FBF0000D78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBD213023F92A2B0000D78A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBD21B123F96FBF0000D78A;
+			remoteInfo = Domain;
+		};
+		DFBD21BE23F96FBF0000D78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBD213023F92A2B0000D78A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBD213723F92A2B0000D78A;
+			remoteInfo = Bolierplate;
+		};
+		DFBD21C523F96FBF0000D78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBD213023F92A2B0000D78A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBD21B123F96FBF0000D78A;
+			remoteInfo = Domain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFBD21C823F96FBF0000D78A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFBD21C923F96FBF0000D78A /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DFBD213823F92A2B0000D78A /* Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBD213B23F92A2B0000D78A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFBD213F23F92A2B0000D78A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DFBD214423F92A2E0000D78A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFBD214723F92A2E0000D78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFBD214923F92A2E0000D78A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBD216123F92ADE0000D78A /* BoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBD216323F92ADE0000D78A /* BoilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateTests.swift; sourceTree = "<group>"; };
+		DFBD216523F92ADE0000D78A /* BoilerplateTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BoilerplateTests; sourceTree = SOURCE_ROOT; };
+		DFBD216D23F92DD10000D78A /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		DFBD216E23F92DD10000D78A /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		DFBD217123F92DE90000D78A /* Romefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Romefile; sourceTree = SOURCE_ROOT; };
+		DFBD217223F92DE90000D78A /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		DFBD217323F92DE90000D78A /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
+		DFBD217423F9313D0000D78A /* Pluginfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
+		DFBD217723F9328F0000D78A /* setup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
+		DFBD217C23F935480000D78A /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
+		DFBD217D23F935480000D78A /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
+		DFBD217E23F935480000D78A /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		DFBD217F23F935480000D78A /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
+		DFBD218023F935480000D78A /* FirebaseInstallations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstallations.framework; path = Carthage/Build/iOS/FirebaseInstallations.framework; sourceTree = "<group>"; };
+		DFBD218123F935480000D78A /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		DFBD218223F935480000D78A /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
+		DFBD218323F935480000D78A /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromisesObjC.framework; path = Carthage/Build/iOS/PromisesObjC.framework; sourceTree = "<group>"; };
+		DFBD218423F935490000D78A /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		DFBD218523F935490000D78A /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		DFBD218623F935490000D78A /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransportCCTSupport.framework; path = Carthage/Build/iOS/GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
+		DFBD218723F935490000D78A /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
+		DFBD218823F935490000D78A /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransport.framework; path = Carthage/Build/iOS/GoogleDataTransport.framework; sourceTree = "<group>"; };
+		DFBD219623F9355F0000D78A /* Toaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toaster.framework; path = Carthage/Build/iOS/Toaster.framework; sourceTree = "<group>"; };
+		DFBD219823F9568F0000D78A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		DFBD219923F9568F0000D78A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DFBD219A23F9568F0000D78A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		DFBD219B23F9568F0000D78A /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		DFBD219C23F9568F0000D78A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		DFBD219D23F9568F0000D78A /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		DFBD219E23F9568F0000D78A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		DFBD21B223F96FBF0000D78A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBD21B423F96FBF0000D78A /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		DFBD21B523F96FBF0000D78A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBD21BA23F96FBF0000D78A /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBD21C123F96FBF0000D78A /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		DFBD21C323F96FBF0000D78A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBD21D623F974240000D78A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFBD21D823F974270000D78A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFBD21D923F976980000D78A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		DFBD21DD23F97A5F0000D78A /* Boilerplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Boilerplate-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFBD21E123F97C4A0000D78A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DFBD21E523F97E9B0000D78A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DFBD21E923F9869E0000D78A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFBD21EB23F9892B0000D78A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFBD213523F92A2B0000D78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBD218A23F935490000D78A /* FirebaseCore.framework in Frameworks */,
+				DFBD218D23F935490000D78A /* FirebaseInstallations.framework in Frameworks */,
+				DFBD21A523F9568F0000D78A /* RxSwift.framework in Frameworks */,
+				DFBD219123F935490000D78A /* FirebaseAnalytics.framework in Frameworks */,
+				DFBD219723F9355F0000D78A /* Toaster.framework in Frameworks */,
+				DFBD21A423F9568F0000D78A /* RxRelay.framework in Frameworks */,
+				DFBD21C723F96FBF0000D78A /* Domain.framework in Frameworks */,
+				DFBD21A223F9568F0000D78A /* Kingfisher.framework in Frameworks */,
+				DFBD219023F935490000D78A /* PromisesObjC.framework in Frameworks */,
+				DFBD218923F935490000D78A /* GoogleUtilities.framework in Frameworks */,
+				DFBD218F23F935490000D78A /* nanopb.framework in Frameworks */,
+				DFBD218E23F935490000D78A /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				DFBD21A123F9568F0000D78A /* RxCocoa.framework in Frameworks */,
+				DFBD21A323F9568F0000D78A /* SnapKit.framework in Frameworks */,
+				DFBD219423F935490000D78A /* FIRAnalyticsConnector.framework in Frameworks */,
+				DFBD219223F935490000D78A /* FirebaseInstanceID.framework in Frameworks */,
+				DFBD218B23F935490000D78A /* GoogleAppMeasurement.framework in Frameworks */,
+				DFBD219F23F9568F0000D78A /* RxBlocking.framework in Frameworks */,
+				DFBD219523F935490000D78A /* GoogleDataTransport.framework in Frameworks */,
+				DFBD219323F935490000D78A /* GoogleDataTransportCCTSupport.framework in Frameworks */,
+				DFBD218C23F935490000D78A /* Protobuf.framework in Frameworks */,
+				DFBD21A023F9568F0000D78A /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD215E23F92ADE0000D78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD21AF23F96FBF0000D78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD21B723F96FBF0000D78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBD21BB23F96FBF0000D78A /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFBD212F23F92A2B0000D78A = {
+			isa = PBXGroup;
+			children = (
+				DFBD213A23F92A2B0000D78A /* Boilerplate */,
+				DFBD216223F92ADE0000D78A /* BoilerplateTests */,
+				DFBD21B323F96FBF0000D78A /* Domain */,
+				DFBD21C023F96FBF0000D78A /* DomainTests */,
+				DFBD216B23F92DB00000D78A /* Supporting Files */,
+				DFBD217B23F9351D0000D78A /* Frameworks */,
+				DFBD213923F92A2B0000D78A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFBD213923F92A2B0000D78A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD213823F92A2B0000D78A /* Boilerplate.app */,
+				DFBD216123F92ADE0000D78A /* BoilerplateTests.xctest */,
+				DFBD21B223F96FBF0000D78A /* Domain.framework */,
+				DFBD21BA23F96FBF0000D78A /* DomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFBD213A23F92A2B0000D78A /* Boilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD21A623F95CB80000D78A /* Views */,
+				DFBD21A823F95CC70000D78A /* ViewModels */,
+				DFBD213B23F92A2B0000D78A /* AppDelegate.swift */,
+				DFBD21DD23F97A5F0000D78A /* Boilerplate-Bridging-Header.h */,
+				DFBD214923F92A2E0000D78A /* Info.plist */,
+				DFBD21E023F97AA30000D78A /* Resources */,
+				DFBD21E723F97EDF0000D78A /* Generated */,
+			);
+			path = Boilerplate;
+			sourceTree = "<group>";
+		};
+		DFBD216223F92ADE0000D78A /* BoilerplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD216323F92ADE0000D78A /* BoilerplateTests.swift */,
+				DFBD216523F92ADE0000D78A /* BoilerplateTests */,
+			);
+			path = BoilerplateTests;
+			sourceTree = "<group>";
+		};
+		DFBD216B23F92DB00000D78A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD217223F92DE90000D78A /* Cartfile */,
+				DFBD217323F92DE90000D78A /* Gemfile */,
+				DFBD217123F92DE90000D78A /* Romefile */,
+				DFBD216C23F92DD10000D78A /* fastlane */,
+				DFBD217623F932470000D78A /* scripts */,
+			);
+			name = "Supporting Files";
+			path = Bolierplate;
+			sourceTree = "<group>";
+		};
+		DFBD216C23F92DD10000D78A /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD216D23F92DD10000D78A /* Appfile */,
+				DFBD216E23F92DD10000D78A /* Fastfile */,
+				DFBD217423F9313D0000D78A /* Pluginfile */,
+			);
+			path = fastlane;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFBD217623F932470000D78A /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD217723F9328F0000D78A /* setup.sh */,
+			);
+			path = scripts;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFBD217B23F9351D0000D78A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD219923F9568F0000D78A /* Alamofire.framework */,
+				DFBD219B23F9568F0000D78A /* Kingfisher.framework */,
+				DFBD219823F9568F0000D78A /* RxBlocking.framework */,
+				DFBD219A23F9568F0000D78A /* RxCocoa.framework */,
+				DFBD219D23F9568F0000D78A /* RxRelay.framework */,
+				DFBD219E23F9568F0000D78A /* RxSwift.framework */,
+				DFBD219C23F9568F0000D78A /* SnapKit.framework */,
+				DFBD218723F935490000D78A /* FIRAnalyticsConnector.framework */,
+				DFBD218423F935490000D78A /* FirebaseAnalytics.framework */,
+				DFBD217D23F935480000D78A /* FirebaseCore.framework */,
+				DFBD218123F935480000D78A /* FirebaseCoreDiagnostics.framework */,
+				DFBD218023F935480000D78A /* FirebaseInstallations.framework */,
+				DFBD218523F935490000D78A /* FirebaseInstanceID.framework */,
+				DFBD217E23F935480000D78A /* GoogleAppMeasurement.framework */,
+				DFBD218823F935490000D78A /* GoogleDataTransport.framework */,
+				DFBD218623F935490000D78A /* GoogleDataTransportCCTSupport.framework */,
+				DFBD217C23F935480000D78A /* GoogleUtilities.framework */,
+				DFBD218223F935480000D78A /* nanopb.framework */,
+				DFBD218323F935480000D78A /* PromisesObjC.framework */,
+				DFBD217F23F935480000D78A /* Protobuf.framework */,
+				DFBD219623F9355F0000D78A /* Toaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFBD21A623F95CB80000D78A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD213F23F92A2B0000D78A /* MainViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DFBD21A823F95CC70000D78A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD21EB23F9892B0000D78A /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DFBD21B323F96FBF0000D78A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD21B423F96FBF0000D78A /* Domain.h */,
+				DFBD21B523F96FBF0000D78A /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DFBD21C023F96FBF0000D78A /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD21C123F96FBF0000D78A /* DomainTests.swift */,
+				DFBD21C323F96FBF0000D78A /* Info.plist */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		DFBD21E023F97AA30000D78A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD214623F92A2E0000D78A /* LaunchScreen.storyboard */,
+				DFBD214423F92A2E0000D78A /* Assets.xcassets */,
+				DFBD21E123F97C4A0000D78A /* Colors.xcassets */,
+				DFBD21E923F9869E0000D78A /* Images.xcassets */,
+				DFBD21D723F974240000D78A /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DFBD21E723F97EDF0000D78A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD21D923F976980000D78A /* Strings.swift */,
+				DFBD21E523F97E9B0000D78A /* Colors.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFBD21AD23F96FBF0000D78A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBD21C423F96FBF0000D78A /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DFBD213723F92A2B0000D78A /* Boilerplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBD215723F92A2E0000D78A /* Build configuration list for PBXNativeTarget "Boilerplate" */;
+			buildPhases = (
+				DFBD21DB23F9770A0000D78A /* [Generated] Strings */,
+				DFBD21E823F984290000D78A /* [Generated] Colors */,
+				DFBD213423F92A2B0000D78A /* Sources */,
+				DFBD213523F92A2B0000D78A /* Frameworks */,
+				DFBD213623F92A2B0000D78A /* Resources */,
+				588E23CD887BB27C1DC68735 /* Carthage */,
+				DFBD21C823F96FBF0000D78A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFBD21C623F96FBF0000D78A /* PBXTargetDependency */,
+			);
+			name = Boilerplate;
+			productName = Bolierplate;
+			productReference = DFBD213823F92A2B0000D78A /* Boilerplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFBD216023F92ADE0000D78A /* BoilerplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBD216823F92ADE0000D78A /* Build configuration list for PBXNativeTarget "BoilerplateTests" */;
+			buildPhases = (
+				DFBD215D23F92ADE0000D78A /* Sources */,
+				DFBD215E23F92ADE0000D78A /* Frameworks */,
+				DFBD215F23F92ADE0000D78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFBD216723F92ADE0000D78A /* PBXTargetDependency */,
+			);
+			name = BoilerplateTests;
+			productName = BolierplateTests;
+			productReference = DFBD216123F92ADE0000D78A /* BoilerplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFBD21B123F96FBF0000D78A /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBD21CA23F96FBF0000D78A /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				DFBD21AD23F96FBF0000D78A /* Headers */,
+				DFBD21AE23F96FBF0000D78A /* Sources */,
+				DFBD21AF23F96FBF0000D78A /* Frameworks */,
+				DFBD21B023F96FBF0000D78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = DFBD21B223F96FBF0000D78A /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFBD21B923F96FBF0000D78A /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBD21CD23F96FBF0000D78A /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				DFBD21B623F96FBF0000D78A /* Sources */,
+				DFBD21B723F96FBF0000D78A /* Frameworks */,
+				DFBD21B823F96FBF0000D78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFBD21BD23F96FBF0000D78A /* PBXTargetDependency */,
+				DFBD21BF23F96FBF0000D78A /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = DFBD21BA23F96FBF0000D78A /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFBD213023F92A2B0000D78A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "김지광";
+				TargetAttributes = {
+					DFBD213723F92A2B0000D78A = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					DFBD216023F92ADE0000D78A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DFBD213723F92A2B0000D78A;
+					};
+					DFBD21B123F96FBF0000D78A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					DFBD21B923F96FBF0000D78A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DFBD213723F92A2B0000D78A;
+					};
+				};
+			};
+			buildConfigurationList = DFBD213323F92A2B0000D78A /* Build configuration list for PBXProject "Boilerplate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = DFBD212F23F92A2B0000D78A;
+			productRefGroup = DFBD213923F92A2B0000D78A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFBD213723F92A2B0000D78A /* Boilerplate */,
+				DFBD216023F92ADE0000D78A /* BoilerplateTests */,
+				DFBD21B123F96FBF0000D78A /* Domain */,
+				DFBD21B923F96FBF0000D78A /* DomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFBD213623F92A2B0000D78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBD21D523F974240000D78A /* Localizable.strings in Resources */,
+				DFBD214823F92A2E0000D78A /* LaunchScreen.storyboard in Resources */,
+				DFBD21EA23F9869E0000D78A /* Images.xcassets in Resources */,
+				DFBD217823F9328F0000D78A /* setup.sh in Resources */,
+				DFBD21E223F97C4A0000D78A /* Colors.xcassets in Resources */,
+				DFBD217523F9313D0000D78A /* Pluginfile in Resources */,
+				DFBD214523F92A2E0000D78A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD215F23F92ADE0000D78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD21B023F96FBF0000D78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD21B823F96FBF0000D78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		588E23CD887BB27C1DC68735 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/Bolierplate-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/Bolierplate-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		DFBD21DB23F9770A0000D78A /* [Generated] Strings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Generated] Strings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"generating Strings.swift\"\ntouch tempStrings.swift\n\necho \"import Foundation\\n\" >> tempStrings.swift\necho \"extension String {\" >> tempStrings.swift\necho \"    var localized: String {\" >> tempStrings.swift\necho \"        return NSLocalizedString(self, comment: \\\"\\\")\" >> tempStrings.swift\necho \"    }\" >> tempStrings.swift\necho \"}\\n\" >> tempStrings.swift\n\necho \"extension String {\" >> tempStrings.swift\ninputfile=${SRCROOT}/$PROJECT_NAME/Resources/ko.lproj/Localizable.strings\nwhile IFS= read -r line\ndo\necho $line\npattern='^[a-zA-Z]+(.*)[\\\\s]*=[\\\\s]*(.*);$'\nif [[ $line =~ $pattern ]]\nthen\n    variableName=$(echo ${line%%=*})\necho $variableName\nif [ \"$variableName\" != \"\" ]; then\necho \"    static let $variableName = \\\"$variableName\\\".localized\" >> tempStrings.swift\nfi\nelse\necho \"No👎\"\nfi\ndone <\"$inputfile\"\necho \"}\" >> tempStrings.swift\ncat tempStrings.swift > ${SRCROOT}/$PROJECT_NAME/Generated/Strings.swift\nrm tempStrings.swift\necho \"-------------\"\ncat $inputfile\ncat ${SRCROOT}/$PROJECT_NAME/Generated/Strings.swift\necho \"-------------\"\n";
+		};
+		DFBD21E823F984290000D78A /* [Generated] Colors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Generated] Colors";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"generating Colors.swift\"\ntouch tempStrings.swift\n\necho \"import UIKit\\n\" >> tempStrings.swift\n\necho \"extension UIColor {\" >> tempStrings.swift\n# inputfile=${SRCROOT}/$PROJECT_NAME/Resources/Colors.xcassets\n\nfor colorset in ${SRCROOT}/$PROJECT_NAME/Resources/Colors.xcassets/*.colorset; do\n   colorset_name=$(basename \"$colorset\")\n   echo $colorset_name\n   colorset_name=$(echo \"$colorset_name\" | cut -f 1 -d '.')\n   echo \"    static let $colorset_name = UIColor(named: \\\"$colorset_name\\\")\" >> tempStrings.swift\ndone\n\necho \"}\" >> tempStrings.swift\ncat tempStrings.swift > ${SRCROOT}/$PROJECT_NAME/Generated/Colors.swift\nrm tempStrings.swift\necho \"-------------\"\ncat $inputfile\ncat ${SRCROOT}/$PROJECT_NAME/Generated/Colors.swift\necho \"-------------\"\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFBD213423F92A2B0000D78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBD21EC23F9892B0000D78A /* MainViewModel.swift in Sources */,
+				DFBD21E623F97E9B0000D78A /* Colors.swift in Sources */,
+				DFBD214023F92A2B0000D78A /* MainViewController.swift in Sources */,
+				DFBD21DA23F976980000D78A /* Strings.swift in Sources */,
+				DFBD213C23F92A2B0000D78A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD215D23F92ADE0000D78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBD216423F92ADE0000D78A /* BoilerplateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD21AE23F96FBF0000D78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD21B623F96FBF0000D78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBD21C223F96FBF0000D78A /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFBD216723F92ADE0000D78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBD213723F92A2B0000D78A /* Boilerplate */;
+			targetProxy = DFBD216623F92ADE0000D78A /* PBXContainerItemProxy */;
+		};
+		DFBD21BD23F96FBF0000D78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBD21B123F96FBF0000D78A /* Domain */;
+			targetProxy = DFBD21BC23F96FBF0000D78A /* PBXContainerItemProxy */;
+		};
+		DFBD21BF23F96FBF0000D78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBD213723F92A2B0000D78A /* Boilerplate */;
+			targetProxy = DFBD21BE23F96FBF0000D78A /* PBXContainerItemProxy */;
+		};
+		DFBD21C623F96FBF0000D78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBD21B123F96FBF0000D78A /* Domain */;
+			targetProxy = DFBD21C523F96FBF0000D78A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFBD214623F92A2E0000D78A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBD214723F92A2E0000D78A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DFBD21D723F974240000D78A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBD21D623F974240000D78A /* en */,
+				DFBD21D823F974270000D78A /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFBD215523F92A2E0000D78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFBD215623F92A2E0000D78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFBD215823F92A2E0000D78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Boilerplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerrykim.Boilerplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Boilerplate/Boilerplate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFBD215923F92A2E0000D78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Boilerplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerrykim.Boilerplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Boilerplate/Boilerplate-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFBD216923F92ADE0000D78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoilerplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerrykim.BoilerplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
+			};
+			name = Debug;
+		};
+		DFBD216A23F92ADE0000D78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoilerplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerrykim.BoilerplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
+			};
+			name = Release;
+		};
+		DFBD21CB23F96FBF0000D78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LTMRB8RA89;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerrykim.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFBD21CC23F96FBF0000D78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LTMRB8RA89;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerrykim.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFBD21CE23F96FBF0000D78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerrykim.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
+			};
+			name = Debug;
+		};
+		DFBD21CF23F96FBF0000D78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerrykim.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFBD213323F92A2B0000D78A /* Build configuration list for PBXProject "Boilerplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBD215523F92A2E0000D78A /* Debug */,
+				DFBD215623F92A2E0000D78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBD215723F92A2E0000D78A /* Build configuration list for PBXNativeTarget "Boilerplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBD215823F92A2E0000D78A /* Debug */,
+				DFBD215923F92A2E0000D78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBD216823F92ADE0000D78A /* Build configuration list for PBXNativeTarget "BoilerplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBD216923F92ADE0000D78A /* Debug */,
+				DFBD216A23F92ADE0000D78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBD21CA23F96FBF0000D78A /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBD21CB23F96FBF0000D78A /* Debug */,
+				DFBD21CC23F96FBF0000D78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBD21CD23F96FBF0000D78A /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBD21CE23F96FBF0000D78A /* Debug */,
+				DFBD21CF23F96FBF0000D78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFBD213023F92A2B0000D78A /* Project object */;
+}

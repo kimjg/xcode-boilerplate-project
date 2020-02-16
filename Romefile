@@ -1,0 +1,20 @@
+cache:
+  s3Bucket: ${BUCKET_NAME}
+repositoryMap:
+- FirebaseAnalyticsBinary:
+  - name: Protobuf
+  - name: FIRAnalyticsConnector
+  - name: Firebase
+  - name: FirebaseAnalytics
+  - name: FirebaseCore
+  - name: FirebaseInstallations
+  - name: FirebaseInstanceID
+  - name: GoogleAppMeasurement
+  - name: GoogleDataTransport
+  - name: GoogleDataTransportCCTSupport
+  - name: GoogleUtilities
+  - name: nanopb
+  - name: PromisesObjC
+  - name: FirebaseCoreDiagnostics
+- FirebaseMessagingBinary:
+  - name: FirebaseMessaging

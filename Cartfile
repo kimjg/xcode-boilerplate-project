@@ -1,0 +1,9 @@
+github "ReactiveX/RxSwift"
+github "onevcat/Kingfisher"
+github "SnapKit/SnapKit"
+github "devxoul/Toaster" "master"
+github "Alamofire/Alamofire" == 4.9.1
+github "tristanhimmelman/AlamofireObjectMapper" ~> 5.2
+github "scribd/Weaver"
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json"
