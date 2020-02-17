@@ -1,11 +1,9 @@
 import Foundation
-
 extension String {
     var localized: String {
         return NSLocalizedString(self, comment: "")
     }
 }
-
-extension String {
+enum Strings {
     static let title = "title".localized
 }

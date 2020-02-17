@@ -5,22 +5,27 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.005172">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00483">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: carthage" time="21.440691">
+      <testcase classname="fastlane.lanes" name="1: carthage" time="18.893316">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: rome" time="6.351487">
+      <testcase classname="fastlane.lanes" name="2: rome" time="6.397219">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: prompt" time="1206.328354">
+      <testcase classname="fastlane.lanes" name="3: prompt" time="3.20257">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: cd ..;carting update" time="6.287291">
         
       </testcase>
     

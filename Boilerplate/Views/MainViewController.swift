@@ -20,12 +20,12 @@ final class MainViewController: UIViewController {
     func setupView() {
         let view = UIView()
         self.view = view
-        view.backgroundColor = .mainBackgroundColor
+        view.backgroundColor = Color.mainBackgroundColor
         
         let label = UILabel()
-        label.text = .title
+        label.text = Strings.title
         label.font = .boldSystemFont(ofSize: 22.0)
-        label.textColor = .mainTitleColor
+        label.textColor = Color.mainTitleColor
         label.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(label)
         NSLayoutConstraint.activate([

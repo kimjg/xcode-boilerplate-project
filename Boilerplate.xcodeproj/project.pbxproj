@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF11E39A23FAAE3700961DEE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF11E39923FAAE3600961DEE /* README.md */; };
 		DFBD213C23F92A2B0000D78A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD213B23F92A2B0000D78A /* AppDelegate.swift */; };
 		DFBD214023F92A2B0000D78A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD213F23F92A2B0000D78A /* MainViewController.swift */; };
 		DFBD214523F92A2E0000D78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD214423F92A2E0000D78A /* Assets.xcassets */; };
@@ -94,6 +95,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DF11E39723FAAAE800961DEE /* generate_colors.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_colors.sh; sourceTree = "<group>"; };
+		DF11E39823FAAAE800961DEE /* generate_strings.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_strings.sh; sourceTree = "<group>"; };
+		DF11E39923FAAE3600961DEE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		DFBD213823F92A2B0000D78A /* Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBD213B23F92A2B0000D78A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFBD213F23F92A2B0000D78A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 		DFBD216B23F92DB00000D78A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DF11E39923FAAE3600961DEE /* README.md */,
 				DFBD217223F92DE90000D78A /* Cartfile */,
 				DFBD217323F92DE90000D78A /* Gemfile */,
 				DFBD217123F92DE90000D78A /* Romefile */,
@@ -275,6 +280,8 @@
 		DFBD217623F932470000D78A /* scripts */ = {
 			isa = PBXGroup;
 			children = (
+				DF11E39823FAAAE800961DEE /* generate_strings.sh */,
+				DF11E39723FAAAE800961DEE /* generate_colors.sh */,
 				DFBD217723F9328F0000D78A /* setup.sh */,
 			);
 			path = scripts;
@@ -514,6 +521,7 @@
 				DFBD217823F9328F0000D78A /* setup.sh in Resources */,
 				DFBD21E223F97C4A0000D78A /* Colors.xcassets in Resources */,
 				DFBD217523F9313D0000D78A /* Pluginfile in Resources */,
+				DF11E39A23FAAE3700961DEE /* README.md in Resources */,
 				DFBD214523F92A2E0000D78A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,19 +556,19 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/Bolierplate-inputPaths.xcfilelist",
+				"$(SRCROOT)/Carthage/xcfilelists/Boilerplate-inputPaths.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = Carthage;
 			outputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/Bolierplate-outputPaths.xcfilelist",
+				"$(SRCROOT)/Carthage/xcfilelists/Boilerplate-outputPaths.xcfilelist",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		DFBD21DB23F9770A0000D78A /* [Generated] Strings */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -578,7 +586,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"generating Strings.swift\"\ntouch tempStrings.swift\n\necho \"import Foundation\\n\" >> tempStrings.swift\necho \"extension String {\" >> tempStrings.swift\necho \"    var localized: String {\" >> tempStrings.swift\necho \"        return NSLocalizedString(self, comment: \\\"\\\")\" >> tempStrings.swift\necho \"    }\" >> tempStrings.swift\necho \"}\\n\" >> tempStrings.swift\n\necho \"extension String {\" >> tempStrings.swift\ninputfile=${SRCROOT}/$PROJECT_NAME/Resources/ko.lproj/Localizable.strings\nwhile IFS= read -r line\ndo\necho $line\npattern='^[a-zA-Z]+(.*)[\\\\s]*=[\\\\s]*(.*);$'\nif [[ $line =~ $pattern ]]\nthen\n    variableName=$(echo ${line%%=*})\necho $variableName\nif [ \"$variableName\" != \"\" ]; then\necho \"    static let $variableName = \\\"$variableName\\\".localized\" >> tempStrings.swift\nfi\nelse\necho \"No👎\"\nfi\ndone <\"$inputfile\"\necho \"}\" >> tempStrings.swift\ncat tempStrings.swift > ${SRCROOT}/$PROJECT_NAME/Generated/Strings.swift\nrm tempStrings.swift\necho \"-------------\"\ncat $inputfile\ncat ${SRCROOT}/$PROJECT_NAME/Generated/Strings.swift\necho \"-------------\"\n";
+			shellScript = "${SRCROOT}/scripts/generate_strings.sh \"${SRCROOT}/$PROJECT_NAME/Generated/Strings.swift\"\n";
 		};
 		DFBD21E823F984290000D78A /* [Generated] Colors */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -596,7 +604,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"generating Colors.swift\"\ntouch tempStrings.swift\n\necho \"import UIKit\\n\" >> tempStrings.swift\n\necho \"extension UIColor {\" >> tempStrings.swift\n# inputfile=${SRCROOT}/$PROJECT_NAME/Resources/Colors.xcassets\n\nfor colorset in ${SRCROOT}/$PROJECT_NAME/Resources/Colors.xcassets/*.colorset; do\n   colorset_name=$(basename \"$colorset\")\n   echo $colorset_name\n   colorset_name=$(echo \"$colorset_name\" | cut -f 1 -d '.')\n   echo \"    static let $colorset_name = UIColor(named: \\\"$colorset_name\\\")\" >> tempStrings.swift\ndone\n\necho \"}\" >> tempStrings.swift\ncat tempStrings.swift > ${SRCROOT}/$PROJECT_NAME/Generated/Colors.swift\nrm tempStrings.swift\necho \"-------------\"\ncat $inputfile\ncat ${SRCROOT}/$PROJECT_NAME/Generated/Colors.swift\necho \"-------------\"\n\n\n";
+			shellScript = "${SRCROOT}/scripts/generate_colors.sh \"${SRCROOT}/$PROJECT_NAME/Generated/Colors.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -733,7 +741,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -788,7 +796,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -804,7 +812,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LTMRB8RA89;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -829,7 +837,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LTMRB8RA89;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
